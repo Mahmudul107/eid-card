@@ -1,0 +1,87 @@
+body {
+    background-color: gray;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 36px;
+    color: tomato;
+    margin-top: 50px;
+    animation-name: slide-in;
+    animation-duration: 1s;
+  }
+
+  p {
+    font-size: 24px;
+    color: #666666;
+    margin-top: 20px;
+    animation-name: fade-in;
+    animation-duration: 2s;
+  }
+
+  .card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #cccccc;
+    padding: 50px;
+    margin-top: 50px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    animation-name: zoom-in;
+    animation-duration: 1s;
+  }
+
+  .image-container {
+    position: relative;
+    margin-top: 30px;
+    animation-name: slide-up;
+    animation-duration: 2s;
+  }
+
+  .image-container img {
+    max-width: 100%;
+  }
+
+  .caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    opacity: 0;
+    animation-name: fade-in-caption;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes slide-in {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+  }
+
+  @keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes zoom-in {
+    from { transform: scale(0.8); }
+    to { transform: scale(1); }
+  }
+
+  @keyframes slide-up {
+    from { transform: translateY(100%); }
+    to { transform: translateY(0); }
+  }
+
+  @keyframes fade-in-caption {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
